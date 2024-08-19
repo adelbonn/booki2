@@ -67,17 +67,16 @@
 
   /****section activity*****/
 
-
   .card-activity {
     height: 270px;
     width: 193px;
     margin: 0 auto;
   }
-.card-activity h4 {
-  font-size:  var(--font-size-small);
-  padding: 10px 15px;
-  text-align: left;
-}
+  .card-activity h4 {
+    font-size: var(--font-size-small);
+    padding: 10px 15px;
+    text-align: left;
+  }
   .card-activity img {
     height: 200px;
     width: 100%;
@@ -113,8 +112,7 @@
   }
 }
 
-
-@media screen and (min-width 768px) and (ma-width: 852px) {
+@media screen and (min-width: 768px) and (ma-width: 852px) {
   .card-activity h4 {
     font-size: var(--font-size-xsmall);
     padding: 10px 15px;

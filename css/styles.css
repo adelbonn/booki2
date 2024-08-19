@@ -446,12 +446,12 @@ input[type="search"] {
 }
 
 .card-activity {
-    flex: 1 1 calc(25% - 30px);
-    display: flex;
-    flex-direction: column;
-    background: var(--color-white);
-    box-shadow: var(--box-shadow-card);
-    border-radius: 20px;
+  flex: 1 1 calc(25% - 30px);
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  box-shadow: var(--box-shadow-card);
+  border-radius: 20px;
 }
 
 .card-activity img {
