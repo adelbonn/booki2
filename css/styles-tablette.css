@@ -67,7 +67,14 @@
 
   /****section activity*****/
 
+
+  .activity-cards {
+    display: flex;
+    
+  }
   .card-activity {
+    display: flex;
+    flex: 1 1 calc(25% - 30px);
     height: 270px;
     width: 193px;
     margin: 0 auto;
@@ -112,10 +119,21 @@
   }
 }
 
-@media screen and (min-width: 768px) and (ma-width: 852px) {
+@media screen and (min-width: 768px) and (max-width: 852px) {
+
   .card-activity h4 {
     font-size: var(--font-size-xsmall);
     padding: 10px 15px;
     text-align: left;
+  }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 767.98px) {
+
+  .activity-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
   }
 }
