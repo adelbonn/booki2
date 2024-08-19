@@ -1,0 +1,554 @@
+/* style.css */
+@import url("variables.css");
+
+/****** General ***********/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  background: var(--color-white);
+}
+
+.main-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0px 50px;
+  margin: 0;
+}
+
+.fa-solid {
+  color: var(--main-color);
+}
+
+h1 {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-bold);
+}
+
+p {
+  font-size: var(--font-size-p);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: var(--box-shadow-card);
+}
+
+.card img {
+  object-fit: cover;
+  height: auto;
+}
+
+.card-title {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-bold);
+}
+
+.euro {
+  font-weight: var(--font-weight-bold);
+}
+
+.neutral-star {
+  color: var(--main-bg-color);
+}
+
+/******header******/
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* *****nav bar***** */
+
+.logo-img {
+  width: 3.818rem; /**61px**/
+  height: 1.188rem; /***19px***/
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem; /**24px**/
+  margin-bottom: 1.25rem; /**20px**/
+  padding-bottom: 0.938rem; /**15px**/
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-regular);
+  text-align: center;
+}
+
+nav a {
+  margin: 1.25rem 1.25rem; /* **20px** */
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.25rem; /**15px**/
+}
+
+/* *****specific styles nav-accommodations***** */
+
+.nav-accomodations {
+  margin: 0;
+  padding-top: 1.4rem; /* **22.4px** */
+  color: var(--main-color);
+  border-top: 2px solid var(--main-color);
+}
+
+/* *****specific styles nav Activités*****add code*/
+
+.nav-activities {
+  color: var(--text-color);
+  margin: 0;
+  padding-right: 0;
+}
+
+/* *****header***** */
+
+h1 {
+  margin-top: 0.625rem; /* ** 10px** */
+}
+
+header p {
+  margin: 0.5rem 0 1.562rem 0; /***8px 25px***/
+  padding: 0 0 10px 0;
+}
+
+/* *****form******* */
+
+form {
+  display: flex;
+}
+
+.fa-location-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50px;
+  max-height: 49px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background: var(--main-bg-color);
+  color: var(--text-color);
+  padding: 15px;
+  border: 1px;
+}
+
+input[type="search"] {
+  max-width: 195px;
+  max-height: 49px;
+  border: 1px solid var(--filter-bg-color);
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
+  background: var(--second-bg-color);
+  padding: 15px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium);
+}
+
+::placeholder {
+  color: var(--text-color);
+}
+
+.button-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 132px;
+  height: 49px;
+  background: var(--main-color);
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  font-size: 1.125rem; /* **20px** */
+  padding: 15px 16px 15px 16px;
+  border: 1px;
+  cursor: pointer;
+}
+
+.button-search-text {
+  display: inline;
+}
+
+.button-search-icon {
+  display: none;
+}
+
+/*filters section*/
+
+.section-filters {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  margin-top: 2.188rem; /***35px***/
+}
+
+.section-filters ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 15px;
+}
+
+.button-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: var(--color-white);
+  border: 2px solid var(--main-bg-color);
+  border-radius: 50px;
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-bold);
+  height: 50px;
+  cursor: default;
+}
+
+.filtres {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.button-filters:hover {
+  background-color: #deebff;
+  transition: 0.5s;
+}
+
+/*icone info header*/
+
+.info-section {
+  display: flex;
+  align-items: center;
+  margin: 35px 0px;
+  gap: 10px;
+}
+
+.fa-custom {
+  color: var(--main-color);
+  background: var(--second-bg-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 0;
+}
+
+.info-section p {
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-regular);
+  margin: 0;
+}
+
+/*main*/
+
+/****** accommodations and popular***********/
+
+.accommodations-and-popular {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.accommodations-and-popular section {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.accommodations-and-popular .accommodations {
+  padding: 30px 0 30px 30px;
+}
+
+/******accommodations ***********/ /*add code*/
+
+.accommodations {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.accommodations-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 30px;
+}
+
+.accommodations-cards a {
+  width: calc(33.333% - 30px);
+  min-height: 207.25px;
+}
+
+.accommodations-cards .card {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 207.25px;
+  padding-bottom: 15px;
+  gap: 4px 0;
+}
+
+.accommodations-cards img {
+  width: 100%;
+  height: 114px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.accommodations .card-content {
+  padding: 0 15px;
+  margin: 0;
+  width: auto;
+  height: 64px;
+}
+
+.accommodations-cards .card-title {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.accommodations-cards p {
+  font-size: var(--font-size-xsmall);
+  margin-bottom: 8px;
+}
+
+.accommodations-cards .card-rating {
+  margin: 0;
+  padding: 0;
+}
+
+.show-more {
+  margin: 30px 0 0 0;
+  font-weight: var(--font-weight-bold);
+}
+
+/****** Popular ***********/
+
+.popular {
+  width: 32%;
+  padding: 30px;
+}
+
+.popular-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-cards .card {
+  display: flex;
+  margin-top: 33px;
+}
+
+.popular-cards img {
+  width: 33%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.popular-cards .card-content {
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popular-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.popular-cards .card-subtitle {
+  font-size: var(--font-size-xsmall);
+}
+
+.popular-cards .card-rating {
+  margin-bottom: 5px;
+}
+
+/* *****activités à Marseille***** */
+
+.activity {
+  background: var(--color-white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-top: 35px;
+}
+
+.activity h2 {
+  padding-bottom: 30px;
+}
+
+.activity-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card-activity {
+    flex: 1 1 calc(25% - 30px);
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    box-shadow: var(--box-shadow-card);
+    border-radius: 20px;
+}
+
+.card-activity img {
+  object-fit: cover;
+  width: 100%;
+  height: 380px;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-activity h4 {
+  font-size: var(--font-size-small);
+  width: 100%;
+  padding: 19px 20px;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+/* *****footer***** */
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: var(--main-bg-color);
+  margin: 30px 0 0;
+  padding: 20px;
+}
+
+footer h3 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  text-align: start;
+  padding-bottom: 15px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 0.938rem;
+}
+
+.section-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 1 1 calc(33.333%);
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  .accommodations-and-popular {
+    flex-direction: column;
+  }
+
+  .accommodations {
+    width: 100%;
+  }
+
+  .popular {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .popular-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .popular-cards a {
+    width: 30%;
+  }
+
+  .popular-cards .card-title {
+    font-size: var(--font-size-xsmall);
+  }
+
+  .popular-cards .card-subtitle {
+    font-size: 13px;
+  }
+}
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+  /* ... */
+}
+
+/******code large dektop****/
+
+@media screen and (min-width: 1440px) {
+  .main-container {
+    width: 100%;
+    max-width: 1440px;
+    background: #fff;
+  }
+}
