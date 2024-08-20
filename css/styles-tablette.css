@@ -67,10 +67,8 @@
 
   /****section activity*****/
 
-
   .activity-cards {
     display: flex;
-    
   }
   .card-activity {
     display: flex;
@@ -120,7 +118,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 852px) {
-
   .card-activity h4 {
     font-size: var(--font-size-xsmall);
     padding: 10px 15px;
@@ -128,12 +125,30 @@
   }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1164px) {
+  .accommodations-cards .card-title {
+    font-size: var(--font-size-xsmall);
+    line-height: 17px;
+    margin-bottom: 5px;
+  }
 
-@media screen and (min-width: 500px) and (max-width: 767.98px) {
+  .accommodations-cards .card-subtitle {
+    font-size: var(--font-size-xxsmall);
+    line-height: 14px;
+  }
 
-  .activity-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .accommodations-cards .card-content {
+    height: 50px;
+  }
 
+  .accommodations-cards p {
+    font-size: var(--font-size-xsmall);
+    margin-bottom: 5px;
+  }
+
+  .accommodations-cards .card-rating {
+    line-height: 10px;
+    margin: 0;
+    padding: 0;
   }
 }

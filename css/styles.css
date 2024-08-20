@@ -461,7 +461,7 @@ input[type="search"] {
   border-radius: 20px 20px 0 0;
 }
 
-.card-activity h4 {
+.card-activity figcaption {
   font-size: var(--font-size-small);
   width: 100%;
   padding: 19px 20px;
@@ -501,12 +501,10 @@ footer ul {
   flex: 1 1 calc(33.333%);
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   .accommodations-and-popular {
+    
     flex-direction: column;
   }
 
@@ -535,8 +533,6 @@ footer ul {
 
   .popular-cards .card-subtitle {
     font-size: 13px;
-  }
-}
 
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
@@ -549,6 +545,6 @@ footer ul {
   .main-container {
     width: 100%;
     max-width: 1440px;
-    background: #fff;
+    background: var(--color-white);
   }
 }

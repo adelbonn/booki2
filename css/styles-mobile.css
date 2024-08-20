@@ -127,6 +127,11 @@
   }
 
   .button-filters {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .button-filters {
     padding: 0.25rem 1.188rem; /***4px  19px***/
     height: 50px;
     width: 162.5px;
@@ -154,23 +159,29 @@
     gap: 15px;
   }
 
-  /* ***** more popular section***** */
+  /* ***** the most popular section***** */
 
-  .accommodations-and-popular .popular {
+  .popular {
     display: block;
     border-radius: 0;
+    width: 100%;
+    margin-top: 50px;
   }
 
   .popular-cards {
     display: block;
   }
 
-  /* *****accommodoations section***** */
+  /* *****accommodations section***** */
 
   .accommodations-and-popular .accommodations {
     padding: 20px;
     background: var(--color-white);
   }
+  .accommodations {
+    width: 100%;
+  }
+
   .accommodations-cards {
     display: block;
   }
@@ -228,6 +239,17 @@
   }
 }
 
+/**ajustement activity***/
+
+@media screen and (min-width: 500px) and (max-width: 767.98px) {
+  .activity-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/***ajustements filters***/
+
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .button-filters {
     padding: 0.25rem 1.188rem;
@@ -242,9 +264,4 @@
     height: 49px;
     max-height: 49px;
   }
-}
-
-/* Small devices (phones, less than 768px) */
-@media screen and (max-width: 767.98px) {
-  /* ... */
 }
