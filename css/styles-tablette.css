@@ -117,8 +117,8 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 852px) {
-  .card-activity h4 {
+@media screen and (min-width: 768px) and (max-width: 868px) {
+  .card-activity figcaption {
     font-size: var(--font-size-xsmall);
     padding: 10px 15px;
     text-align: left;
@@ -128,8 +128,9 @@
 @media screen and (min-width: 1025px) and (max-width: 1164px) {
   .accommodations-cards .card-title {
     font-size: var(--font-size-xsmall);
-    line-height: 17px;
+    line-height: 15px;
     margin-bottom: 5px;
+    margin-top: 5px;
   }
 
   .accommodations-cards .card-subtitle {
