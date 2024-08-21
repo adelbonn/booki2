@@ -21,7 +21,7 @@ body {
   width: 100%;
   max-width: 1440px;
   padding: 0px 50px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .fa-solid {
@@ -134,7 +134,7 @@ nav ul {
   border-top: 2px solid var(--main-color);
 }
 
-/* *****specific styles nav Activités*****add code*/
+/* *****specific styles nav Activités****/
 
 .nav-activities {
   color: var(--text-color);
@@ -313,7 +313,7 @@ input[type="search"] {
   padding: 30px 30px 30px 30px;
 }
 
-/******accommodations ***********/ /*add code*/
+/******accommodations ***********/ 
 
 .accommodations {
   width: 65%;
@@ -322,7 +322,7 @@ input[type="search"] {
   justify-content: left;
 }
 
-accommodations-cards {
+/**version avec flexbox**/accommodations-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 0px 30px;
@@ -338,7 +338,7 @@ accommodations-cards {
 
 
 
-.accommodations-cards a {
+.accommodations-cards a {   /**avec flex box ajouter : width calc:(33.33% - 30px)**/
  
   min-height: 207.25px;
 }
@@ -543,7 +543,9 @@ footer ul {
 
   .popular-cards .card-subtitle {
     font-size: 13px;
+  }
 
+}
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
   /* ... */
