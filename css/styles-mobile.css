@@ -241,12 +241,7 @@
 
 /**ajustement activity***/
 
-@media screen and (min-width: 500px) and (max-width: 767.98px) {
-  .activity-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 
 /***ajustements filters***/
 
